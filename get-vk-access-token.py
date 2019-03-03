@@ -7,7 +7,7 @@ def main():
 	client_id = '3697615'	# Official VK Windows app client id
 
 	login = input(pct.white.bold('Login: '))
-	password = pwd = getpass.getpass(pct.white.bold('Password: '))
+	password = getpass.getpass(pct.white.bold('Password: '))
 
 	response = requests.get(
 		'https://oauth.vk.com/token?grant_type=password&client_id='+client_id+'&client_secret=AlVXZFMUqyrnABp8ncuU&username=' + login + '&password=' + password
