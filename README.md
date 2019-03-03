@@ -1,6 +1,6 @@
 # Get VK access token
-<img src="https://img.shields.io/badge/python-3-green.svg" />
 Теперь вы можете с легкостью получить access token от страницы вк
+<img src="https://img.shields.io/badge/python-3-green.svg" />
 
 # Как это работает
 * Программа получает токен доступа, имитируя получение разрешения от официального приложения VK для Windows.
