@@ -8,7 +8,7 @@
 
 # Установка 
 ```
-~# git clone https://github.com/jieggii/get-vk-access-token.git
+~# git clone https://github.com/jieggii/vk-get-access-token.git
 ~# cd get-vk-access-token/
 ~# apt install python3 & apt install python3-pip
 ```
