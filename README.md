@@ -1,5 +1,5 @@
 # Get VK access token
-Теперь вы можете с легкостью получить access token от страницы вк
+Теперь вы можете с легкостью получить access token от страницы вк <br>
 <img src="https://img.shields.io/badge/python-3-green.svg" />
 
 # Как это работает
