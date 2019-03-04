@@ -15,6 +15,6 @@
 
 # Запуск
 ```
-~# python3 get-vk-access-token.py
+~# python3 vk-get-access-token.py
 ```
 Программа запросит логин и пароль от страницы, затем, через секунду вы получите ваш access token.
