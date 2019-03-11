@@ -1,7 +1,6 @@
 import requests
 from getpass import getpass
 import argparse
-from lib import pictorem as pct
 
 
 #CLIENT_ID = 3697615						# Client id for authorization. 3697615 is Official VK app for windows
