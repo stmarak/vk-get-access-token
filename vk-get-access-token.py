@@ -63,7 +63,7 @@ def main():
 
 
 	if not args.quiet:
-		print('Your VK access token: "' + access_token + '"')
+		print('[*] Your VK access token: "' + access_token + '"')
 
 	if args.file_path:
 		try:

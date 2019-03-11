@@ -1,6 +1,8 @@
 # VK Get Access Token
 ### Получить токен от страницы ВК теперь не проблема
 
+<img src="https://github.com/jieggii/vk-get-access-token/blob/master/img/1.png"></img>
+
 ## Как это работает
 * Программа имитирует получение access token'a приложением, после чего, возвращает его.
 
