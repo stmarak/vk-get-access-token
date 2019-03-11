@@ -1,20 +1,56 @@
-# Get VK access token
-<img src="https://img.shields.io/badge/python-3-green.svg" />
-Теперь вы можете с легкостью получить access token от страницы вк
+# VK Get Access Token
+### Получить токен от страницы ВК теперь не проблема
 
+## Как это работает
+* Программа имитирует получение access token'a приложением, после чего, возвращает его.
 
-# Как это работает
-* Программа получает токен доступа, имитируя получение разрешения от официального приложения VK для Windows.
-
-# Установка 
+## Установка
+### Linux
 ```
+~# sudo apt update
+~# sudo apt install python3 python3-pip
 ~# git clone https://github.com/jieggii/vk-get-access-token.git
-~# cd get-vk-access-token/
-~# apt install python3 & apt install python3-pip
+~# cd vk-get-access-token.git
+~# pip3 install -r requirements.txt
 ```
 
-# Запуск
+### Windows
+1. Скачайте Python 3 с <a href="https://python.org">официального сайта</a>
+2. При установке поставьте галочку на пункте <b>pip</b>
+3. Скачайте <a href="/jieggii/vk-get-access-token/archive/master.zip">архив с программой</a> и распакуйте его в удобное для вас место
+4. Зажмите сочетание клавиш <b>WIN+R</b>, напишите <b>cmd</b> и нажмите <b>Enter</b>
+5. Пропишите команду ```cd [path]```, где ```[path]``` - путь до папки, которую вы распаковали
+6. Пропишите команду ```pip install -r requirements.txt```
+
+## Запуск
+### Использование
 ```
-~# python3 vk-get-access-token.py
+usage: vk-get-access-token.py [-h] [-l LOGIN] [-p PASSWORD] [-q]
+                              [-f FILE_PATH] [-cl CLIENT_ID]
+                              [-cs CLIENT_SECRET]
+
+optional arguments:
+  -h, --help            помощь по программе
+  -l LOGIN, --login LOGIN
+                       Ваш логин от VK
+  -p PASSWORD, --password PASSWORD
+                        Ваш пароль от VK
+  -q, --quiet           Не выводить ваш токен в терминал (для безопасности), полезно, когда вы используете                         сохранение токена сразу в файл
+  -f FILE_PATH, --file-path FILE_PATH
+                        Сохранить токен в файл [file path]
+
+VK app settings (optional):
+  -cl CLIENT_ID, --client-id CLIENT_ID
+                        VK app client id
+  -cs CLIENT_SECRET, --client-secret CLIENT_SECRET
+                        VK app secret
 ```
-Программа запросит логин и пароль от страницы, затем, через секунду вы получите ваш access token.
+
+### Примеры команд
+```
+~# python3 vk-get-access-token.py --login +3563284545 --password helloworld123 --quiet --file-path my_access_token.txt
+~# python vk-get-access-token.py
+```
+
+### License
+* MIT
