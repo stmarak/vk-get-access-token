@@ -3,10 +3,6 @@ from getpass import getpass
 import argparse
 
 
-#CLIENT_ID = 3697615						# Client id for authorization. 3697615 is Official VK app for windows
-#CLIENT_SECRET = 'AlVXZFMUqyrnABp8ncuU'		# Client secret for Official VK app for windows
-
-
 def get_access_token(login, password, client_id, client_secret):
 	try:
 		response = requests.get(
@@ -38,8 +34,8 @@ def parse_args():
 	parser.add_argument('-f', '--file-path', help='Save access token into file [file path]', type=str)
 
 	vk_app_settings = parser.add_argument_group('VK app settings (optional)')
-	vk_app_settings.add_argument('-cl', '--client-id', help='VK app client id', type=int, default=3697615)
-	vk_app_settings.add_argument('-cs', '--client-secret', help='VK app secret', type=str, default='AlVXZFMUqyrnABp8ncuU')
+	vk_app_settings.add_argument('-cl', '--client-id', help='VK app client id', type=int, default=3697615) # 3697615 is client id for official VK app for windows
+	vk_app_settings.add_argument('-cs', '--client-secret', help='VK app secret', type=str, default='AlVXZFMUqyrnABp8ncuU') # AlVXZFMUqyrnABp8ncuU is secret for official VK app for windows
 
 
 	return parser.parse_args()
